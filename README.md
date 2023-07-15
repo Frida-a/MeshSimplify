@@ -1,12 +1,26 @@
-# 基础代码和示例程序
+# Mesh Simplification C++ implement 
 
-本次作业的基础代码包括如下部分：
-- `types.h`: 定义了用于索引的两个类型，均为`int`。本次作业中不必修改。
-- `timing.h`: 一个计时函数`Time`。
-- `matrix.h`: 包含向量类`Vec`和矩阵类`Mat`。
-- `HEMesh.h`: 包含用于定义半边结构的`Vert`、`Edge`、`Face`、`Mesh`四个结构体/类
+Implemented famous mesh simplification algorithm from this work :
+`Michael Garland and Paul S. Heckbert. Surface simplification using quadric error metrics. SIGGRAPH 1997.`
 
-为更好的理解基础代码，给定如下示例程序：
-- `example_gen_tetrahedron.cpp`：利用`Mesh`类，创建并输出一个四面体。
-- `example_matrix_usage.cpp`：`Vec`和`Mat`类的创建与使用。
-- `example_iterator_usage.cpp`：STL容器类（containers）及其迭代器（iterators）的用法。
+## file discriptions
+
+Header Files：
+- `matrix.h`: include two classes:`Vec`and`Mat`, tool fuctions for Matrix calculation
+- `HEMesh.h`: include four structures and classes `Vert`、`Edge`、`Face`、`Mesh`to describe half-edge structure of meshes. Also includes all the main fuctions to perform operations on meshes, such as edge collapse, point insertion, edge flip and mesh simplify.
+
+Example Cpp file to utilize the functions：
+- `A1_OBJtoHE.cpp`：read OBJ files and convert to half-edge structure. Time complexcity O(n).
+- `A2.cpp`：implement edge collapse, time complexcity O(1).
+- `A3.cpp`：implement point insertion, time complexcity O(1).
+- `A4.cpp`：implement edge flip, time complexcity O(1).
+- `B1.cpp`：find most suitable Vertex for mesh simplification. Then conduct mesh simplification with priority queues.
+
+Other files unmentioned are trivial to core function.
+<br> </br>
+## results
+
+![image](https://github.com/Frida-a/MeshSimplify/assets/79256468/9ab1d9ba-b393-4492-a974-4233c21ee707)
+<br> </br>
+Time complexity estimation
+![image](https://github.com/Frida-a/MeshSimplify/assets/79256468/e39a9559-407b-4361-b487-727f43525ce9)
