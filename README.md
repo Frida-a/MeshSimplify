@@ -3,7 +3,7 @@
 Implemented famous mesh simplification algorithm from this work :
 `Michael Garland and Paul S. Heckbert. Surface simplification using quadric error metrics. SIGGRAPH 1997.`
 
-## file discriptions
+## file descriptions
 
 Header Files：
 - `matrix.h`: include two classes:`Vec`and`Mat`, tool fuctions for Matrix calculation
