@@ -23,4 +23,5 @@ Other files unmentioned are trivial to core function.
 ![image](https://github.com/Frida-a/MeshSimplify/assets/79256468/9ab1d9ba-b393-4492-a974-4233c21ee707)
 <br> </br>
 Time complexity estimation
-![image](https://github.com/Frida-a/MeshSimplify/assets/79256468/e39a9559-407b-4361-b487-727f43525ce9){:height="50%" width="50%"}
+<br> </br>
+<img src="https://github.com/Frida-a/MeshSimplify/assets/79256468/e39a9559-407b-4361-b487-727f43525ce9" height="50%" width="50%">
